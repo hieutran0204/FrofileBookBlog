@@ -18,7 +18,7 @@ interface Block {
 interface Book {
   id: string;
   title: string;
-  fileUrl?: string; // link Google Drive PDF
+  fileUrl?: string;
   blocks?: Block[];
   createdAt?: { seconds: number };
 }
@@ -69,8 +69,7 @@ export default function BookDetailPage() {
 
     // Tìm ID file trong các dạng link khác nhau
     const idMatch =
-      url.match(/\/d\/([a-zA-Z0-9_-]+)/) || // /file/d/<id>/
-      url.match(/id=([a-zA-Z0-9_-]+)/); // open?id=<id>
+      url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/id=([a-zA-Z0-9_-]+)/);
 
     const fileId = idMatch ? idMatch[1] : null;
 
@@ -78,7 +77,7 @@ export default function BookDetailPage() {
       return `https://drive.google.com/file/d/${fileId}/preview`;
     }
 
-    return url; // fallback nếu không phải link hợp lệ
+    return url;
   };
 
   return (

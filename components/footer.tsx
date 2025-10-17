@@ -139,7 +139,7 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
               <a
-                href="https://www.linkedin.com/feed/"
+                href="https://www.linkedin.com/in/hi%E1%BA%BFu-tr%E1%BA%A7n-339850309/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
