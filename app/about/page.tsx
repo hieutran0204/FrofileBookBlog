@@ -306,6 +306,61 @@ export default function AboutPage() {
                   thống web.
                 </p>
               </Card>
+              {/* Chứng chỉ */}
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-border/50">
+                <h2 className="text-2xl font-bold mb-4 text-accent">
+                  🏅 Chứng chỉ
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                  Một số chứng chỉ chuyên ngành từ{" "}
+                  <strong>Cisco Networking Academy</strong> – khẳng định nền
+                  tảng kiến thức vững chắc về lập trình và mạng máy tính.
+                </p>
+
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                  {/* JavaScript 1 */}
+                  <div className="relative group rounded-xl overflow-hidden border border-border/50 shadow-lg hover:scale-[1.03] hover:shadow-xl transition-all">
+                    <Image
+                      src="/certificates/js1_page-0001.jpg"
+                      alt="Cisco Introduction to JavaScript 1"
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-48 group-hover:opacity-90 transition-opacity"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-sm p-2 text-center">
+                      Cisco – Introduction to JavaScript 1
+                    </div>
+                  </div>
+
+                  {/* JavaScript 2 */}
+                  <div className="relative group rounded-xl overflow-hidden border border-border/50 shadow-lg hover:scale-[1.03] hover:shadow-xl transition-all">
+                    <Image
+                      src="/certificates/js2_page-0001.jpg"
+                      alt="Cisco Introduction to JavaScript 2"
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-48 group-hover:opacity-90 transition-opacity"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-sm p-2 text-center">
+                      Cisco – Introduction to JavaScript 2
+                    </div>
+                  </div>
+
+                  {/* Networking Basics */}
+                  <div className="relative group rounded-xl overflow-hidden border border-border/50 shadow-lg hover:scale-[1.03] hover:shadow-xl transition-all">
+                    <Image
+                      src="/certificates/NetworkingBasics_page-0001.jpg"
+                      alt="Cisco Networking Basics"
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-48 group-hover:opacity-90 transition-opacity"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-sm p-2 text-center">
+                      Cisco – Networking Basics
+                    </div>
+                  </div>
+                </div>
+              </Card>
 
               {/* Sở thích */}
               <Card className="p-6 bg-card/80 backdrop-blur-sm border-border/50">
