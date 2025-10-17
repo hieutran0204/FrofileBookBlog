@@ -114,7 +114,7 @@ export function Footer() {
           {/* Branding */}
           <div className="flex items-center gap-2 text-muted-foreground">
             <span className="text-sm">
-              © 2025 Space Dev. All rights reserved.
+              © 2025 TranHieu Dev. All rights reserved.
             </span>
           </div>
 
